@@ -42,7 +42,7 @@ run("server.ts", Permission.net(["deno.land", "github.com", 8000, 9000]))
 ```
 ### files
 file permissions can be given accordingly like so
-```
+```typescript
 run("file.ts", Permission.read) // read file permissions ('--allow-read')
 run("file.ts", Permission.write) // write file permissions ('--allow-write')
 run("file.ts", Permission.read, Permission.write) // full file permissions ('--allow-read --allow-write')
